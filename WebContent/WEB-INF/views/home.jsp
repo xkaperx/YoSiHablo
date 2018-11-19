@@ -15,5 +15,28 @@
 		</c:forEach>
 	</ol>
 
+	Tabla de idiomas
+	<table border="1">
+		<thead>
+			<tr>
+				<th>Id</th>
+				<th>Titulo</th>
+				<th>Duracion</th>
+				<th>Detalle</th>
+			</tr>
+		</thead>
+		<tbody>
+		<c:forEach items= "${ idiomas }" var="idioma">
+			<tr>
+			<td>${idioma.id }</td>
+			<td>${idioma.titulo }</td>
+			<td>${idioma.duracion } meses</td>
+			<td>${idioma.detalle }</td>
+			</tr>
+		</c:forEach>
+		</tbody>
+		
+	</table>
+
 </body>
 </html>
